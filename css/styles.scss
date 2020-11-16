@@ -8,6 +8,10 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
+body.page_main .menu_top_wrapper{
+    background: transparent;
+}
+
 @media(max-width: 780px) {
     body.mobile-menu-opened {
         overflow: hidden;
@@ -169,6 +173,7 @@ html, body {
 
     .menu_top_wrapper {
         padding: 32px 135px 43px;
+        background: #f8f8f8;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
