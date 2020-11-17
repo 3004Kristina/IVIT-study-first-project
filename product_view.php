@@ -158,12 +158,12 @@
 </section>
 <!--SECTION PRODUCT VIEW END-->
 
-<!--SECTION PRODUCT VIEW NAVIGATION START-->
-<section class="product_view_navigation_wrapper">
+<!--SECTION PRODUCT VIEW NAVIGATION TABS START-->
+<section class="product_view_navigation_tabs_wrapper">
     <div class="container">
-        <div class="product_view_navigation_bg">
-            <ul class="product_view_navigation">
-                <li><a href="#">Description</a></li>
+        <div class="product_view_navigation_tabs_bg">
+            <ul class="product_view_navigation_tabs">
+                <li><a href="#" class="active">Description</a></li>
                 <li><a href="#">Video</a></li>
                 <li><a href="#">Size & Specs</a></li>
                 <li><a href="#">Delivery & Returns</a></li>
@@ -172,10 +172,10 @@
         </div>
     </div>
 </section>
-<!--SECTION PRODUCT VIEW NAVIGATION END-->
+<!--SECTION PRODUCT VIEW NAVIGATION TABS END-->
 
-<!--SECTION PRODUCT VIEW SEO TEXT START-->
-<section class="product_view_seo_text_wrapper">
+<!--SECTION PRODUCT VIEW CONTENT TABS START-->
+<section class="product_view_content_tabs_wrapper">
     <div class="container">
         <h4>
             Nunc egestas posuere enim, eu maximus erat posuere eget
@@ -205,8 +205,7 @@
         </p>
     </div>
 </section>
-<!--SECTION PRODUCT VIEW SEO TEXT END-->
+<!--SECTION PRODUCT VIEW CONTENT TABS END-->
 
-<script src="/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+
 <?php require __DIR__ . '/.footer.php'; ?>

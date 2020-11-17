@@ -766,8 +766,9 @@ body.page_main .menu_top_wrapper{
                         justify-content: stretch;
                         list-style: none;
                         margin: 0;
-                        padding: 100px 30px 0;
+                        padding: 50px 30px 0;
                         position: static;
+                        width: 235px;
 
                         > li {
                             position: relative;
@@ -887,6 +888,7 @@ body.page_main .menu_top_wrapper{
                     width: 50px;
                     height: 50px;
                     border-radius: 50%;
+                    pointer-events: auto;
 
                     span {
                         display: block;
@@ -2989,7 +2991,7 @@ body.page_main .menu_top_wrapper{
 }
 /*! SECTION LOCAL STORIES MAP END */
 
-//*!SECTION PRODUCT VIEW START
+/*!SECTION PRODUCT VIEW START */
 .product_view_wrapper {
     .product_view_content {
         padding-top: 62px;
@@ -3699,15 +3701,15 @@ body.page_main .menu_top_wrapper{
         }
     }
 }
-//*!SECTION PRODUCT VIEW END
+/*!SECTION PRODUCT VIEW END */
 
-//*!SECTION PRODUCT VIEW NAVIGATION START
-.product_view_navigation_wrapper {
-    .product_view_navigation_bg {
+/*!SECTION PRODUCT VIEW NAVIGATION TABS START */
+.product_view_navigation_tabs_wrapper {
+    .product_view_navigation_tabs_bg {
         background: #f8f8f8;
         margin-top: 38px;
 
-        .product_view_navigation {
+        .product_view_navigation_tabs {
             list-style: none;
             margin: 0 -30px;
             padding: 0;
@@ -3730,8 +3732,7 @@ body.page_main .menu_top_wrapper{
                     padding: 15px;
                     margin: 0 30px;
 
-
-                    &:hover, &:active, &:focus {
+                    &.active {
                         background: #333333;
                         color: #ffffff;
                     }
@@ -3741,9 +3742,9 @@ body.page_main .menu_top_wrapper{
     }
 
     @media(max-width: 1260px) {
-        .product_view_navigation_bg {
+        .product_view_navigation_tabs_bg {
 
-            .product_view_navigation {
+            .product_view_navigation_tabs {
                 margin: 0 -20px;
 
                 li {
@@ -3758,11 +3759,11 @@ body.page_main .menu_top_wrapper{
     }
 
     @media(max-width: 780px) {
-        .product_view_navigation_bg {
+        .product_view_navigation_bg_tabs {
             background: #f8f8f8;
             margin-top: 38px;
 
-            .product_view_navigation {
+            .product_view_navigation_tabs {
                 list-style: none;
                 margin: 0;
                 padding: 0;
@@ -3782,10 +3783,10 @@ body.page_main .menu_top_wrapper{
         }
     }
 }
-//*!SECTION PRODUCT VIEW NAVIGATION END
+/*!SECTION PRODUCT VIEW NAVIGATION TABS END */
 
-//*!SECTION PRODUCT VIEW SEO TEXT START
-.product_view_seo_text_wrapper {
+/*!SECTION PRODUCT VIEW CONTENT TABS START */
+.product_view_content_tabs_wrapper {
     padding-bottom: 124px;
 
     h4 {
@@ -3816,7 +3817,7 @@ body.page_main .menu_top_wrapper{
         padding-bottom: 70px;
     }
 }
-//*!SECTION PRODUCT VIEW SEO TEXT END
+/*!SECTION PRODUCT VIEW CONTENT TABS END */
 
 /*! FOOTER START */
 .footer_wrapper {

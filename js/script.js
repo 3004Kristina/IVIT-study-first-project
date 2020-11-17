@@ -1,36 +1,4 @@
-const mobile_menu_btn = document.querySelector('.mobile_menu_btn');
-const body = document.querySelector('body');
-const mobile_menu_bg = document.querySelector('.mobile_menu_bg');
-
-
-for (let dropDownToggle of document.querySelectorAll('.with_dropdown .dropdown_toggle')) {
-    let withDropdown = dropDownToggle.closest('.with_dropdown');
-
-    dropDownToggle.addEventListener('click', (e) => {
-        e.preventDefault();
-        withDropdown.classList.toggle('open');
-    });
-}
-
-
-document.addEventListener('click', (e) => {
-    for (let withDropdown of document.querySelectorAll('.with_dropdown.open')) {
-        if (withDropdown.contains(e.target) === false) {
-            withDropdown.classList.remove('open');
-        }
-    }
-});
-
-mobile_menu_btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    body.classList.toggle('mobile-menu-opened');
-
-});
-
-mobile_menu_bg.addEventListener('click', () => {
-    body.classList.remove('mobile-menu-opened');
-});
-
+// SECTION LOCAL STORIES MAP START
 function initMap() {
     const image = '../img/location.png';
     let coords = {lat: 51.5124696, lng: -0.1420052};
@@ -222,8 +190,41 @@ function initMap() {
         title: 'AVE'
     });
 }
+// SECTION LOCAL STORIES MAP END
 
 jQuery(function() {
+    'use strict';
+    let $body = jQuery('body');
+
+    // MENU TOP START
+    jQuery('.with_dropdown .dropdown_toggle').on('click', function (e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        jQuery('.with_dropdown.open').removeClass('open');
+        jQuery(this).closest('.with_dropdown').toggleClass('open');
+    });
+
+    jQuery(document).on('click', ':not(.with_dropdown.open) *', function() {
+        jQuery('.with_dropdown.open').removeClass('open');
+    });
+    // MENU TOP END
+
+
+    // MOBILE MENU START
+    jQuery('.mobile_menu_btn').on('click', function(e){
+        e.preventDefault();
+        $body.toggleClass('mobile-menu-opened');
+    });
+
+
+    jQuery('.mobile_menu_bg').on('click', function(){
+       $body.removeClass('mobile-menu-opened');
+    });
+    // MOBILE MENU END
+
+
+    //SECTION PRODUCT VIEW START
     jQuery('.product_carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -252,5 +253,6 @@ jQuery(function() {
             $input.val(Math.max(res, 1));
         });
     });
+    //SECTION PRODUCT VIEW END
 });
 
