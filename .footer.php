@@ -99,8 +99,8 @@
     </div>
 </footer>
 <!--FOOTER END-->
-<script src="/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="/js/script.js"></script>
 </body>
 </html>
